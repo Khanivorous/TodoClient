@@ -5,8 +5,8 @@ and returns the Todo object at a given id.
 This project is designed to showcase a few simple ways of testing Spring applications that use RestTemplate.
 
 ## Running the application
-If you want to run the app using docker, first, build the application jar using `gradle bootJar`, then
-run the [docker-compose](docker-compose.yml) file with `docker compose up` can be used to run locally and play around with.
+If you want to run the app locally using docker, first, build the application jar using `gradle bootJar`, then
+run the [docker-compose](docker-compose.yml) file with `docker compose up`.
 
 You can access the swagger ui at http://localhost:8080/swagger-ui/index.html where you can do simple get requests.
 
