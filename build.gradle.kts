@@ -18,6 +18,7 @@ dependencies {
     implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.0.0")
     testImplementation("com.fasterxml.jackson.core:jackson-databind:2.14.1")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
+    testImplementation("app.getxray:xray-junit-extensions:0.6.2")
 }
 
 tasks.test {

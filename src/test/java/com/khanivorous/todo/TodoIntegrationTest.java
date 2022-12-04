@@ -1,5 +1,6 @@
 package com.khanivorous.todo;
 
+import app.getxray.xray.junit.customjunitxml.annotations.XrayTest;
 import com.khanivorous.todo.model.Todo;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Tag;
@@ -35,6 +36,7 @@ public class TodoIntegrationTest {
     }
 
     @Test
+    @XrayTest(key = "KHAN-41")
     void getTodoById() {
         ResponseEntity<Todo> response = testRestTemplate.
                 getForEntity(baseUrl + "/todo/1", Todo.class);
